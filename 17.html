@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+ <head> 
+ <title> Użycie fukcji </title> 
+ <meta charset="utf-8"> 
+ </head> 
+<body>
+ <div style="color:navy;font-size:50px;">
+ <script language="JavaScript">
+ var a=parseFloat(prompt("a=",""));
+ var b=parseFloat(prompt("b=",""));
+ function suma_cym(a, b) {
+ return a + b;
+ }
+ function odejmowanie_cym(a, b) {
+ return a - b;
+ }
+ function mnozenie_cym(a, b) {
+ return a * b;
+ }
+ function do_kwadratu_a_cym(a) {
+ return Math.pow(a,2);
+ }
+ function do_kwadratu_b_cym(b) {
+ return Math.pow(b,2);
+ }
+ function reszta_z_dzielenia_a_przez_b_cym(a, b) {
+ return a & b;
+ }
+ document.write("suma="+suma_cym(a,b)+"<br>");
+ document.write("odejmowanie="+odejmowanie_cym(a,b)+"<br>");
+ document.write("a do kwadratu="+do_kwadratu_a_cym(a)+"<br> b do kwadratu="+do_kwadratu_b_cym(b)+"<br>");
+ document.write("reszta z dzielenia a przez b="+reszta_z_dzielenia_a_przez_b_cym(a,b)+"<br>");
+
+</script>
+</div>
+</body>
+</html>

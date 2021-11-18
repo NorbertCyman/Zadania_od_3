@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>
+</title>
+<script language="JavaScript">
+function drab_cyman(d_cym,x_cym)
+{
+d_cyman=parseFloat(d_cym)
+x_cyman=parseFloat(x_cym)
+drabina_cyman=Math.sqrt(Math.pow(d_cym,2)+Math.pow(x_cym,2))
+document.getElementsByName('drab')[0].value=drabina_cyman.toFixed(2);
+alert("Długość drabiny="+drabina_cyman.toFixed(2));
+pokaz1.innerHTML="Długość drabiny="+drabina_cyman.toFixed(2)+"<br>";
+}
+function kat_cyman(d_cym,x_cym)
+{
+d_cyman=parseFloat(d_cym)
+x_cyman=parseFloat(x_cym)
+tan=d_cyman/x_cyman
+kat_wynik=Math.atan(tan)*180/Math.PI
+document.getElementsByName('kat')[0].value=kat_wynik.toFixed(2);
+alert("Alfa="+kat_wynik.toFixed(2));
+pokaz2.innerHTML="Alfa="+kat_wynik.toFixed(2);
+}
+</script>
+</head>
+<body>
+<form name="formularz" action="..." onsubmit="drab_cyman(this.wysokosc.value,this.odleglosc.value); kat_cyman(this.wysokosc.value,this.odleglosc.value);return false">
+Podaj d=
+<input size="6" name="wysokosc">
+Podaj x=
+<input size="6" name="odleglosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Długość drabiny=
+<input size="6" name="drab">
+Alfa=
+<input size="6" name="kat">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
