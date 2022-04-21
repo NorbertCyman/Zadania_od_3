@@ -1,0 +1,21 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function pociag(marka_p,model_p,masa_p){
+ this.marka=marka_p;
+ this.model=model_p;
+ this.masa=masa_p;
+ }
+ pociag.prototype.wypisz=function(){
+ alert(this.marka +"  "+ this.model +"  "+ this.masa)
+ }
+ var pociag1=new pociag('Pesa', '730M', '144');
+ var pociag2=new pociag('Pesa', 'Dart', '395');
+ pociag1.wypisz(); 
+ pociag2.wypisz();
+
+ </script>
+ </head>
+<body>
+
+</html>

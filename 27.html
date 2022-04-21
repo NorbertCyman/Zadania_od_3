@@ -1,0 +1,23 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ var pociag = {
+marka: 'Pesa',
+model: '730M',
+masa: '144',
+pociag_wyswietl_cyman: function ()
+{
+ document.write("marka: " + this.marka + '<br>model: ' + this.model + "<br>masa(t)" + this.masa)
+ }
+}
+pociag.pociag_wyswietl_cyman();
+pociag.marka='Pafawag';
+pociag.model='EN57';
+pociag.masa='126,5';
+pociag.pokaz=function(){alert("<br>marka: " + this.marka + '<br>model: ' + this.model + "<br>masa(t)" + this.masa)}
+pociag.pokaz();
+ </script>
+ </head>
+<body>
+
+</html>
